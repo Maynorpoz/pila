@@ -52,11 +52,6 @@ def infija_a_postfija(expresion):
                 precedencia[operadores.peek()] >= precedencia[token]):
                 salida.append(operadores.pop())
             operadores.push(token)
-    
-       # else:
-        #    while (not operadores.is_empty() and precedencia[operadores.peek()] >= precedencia[token]):
-         #       salida.append(operadores.pop())
-          #  operadores.push(token)
 
     while not operadores.is_empty():
         salida.append(operadores.pop())
